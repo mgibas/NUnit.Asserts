@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NUnit.Asserts.Microsoft.Owin.Security</id>
+    <version>0.1.0</version>
+    <authors>mgibas</authors>
+    <owners>mgibas</owners>
+    <projectUrl>https://github.com/mgibas/NUnit.Asserts</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NUnit assertions for Microsoft.Owin.Security</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>NUnit Assert Owin Security</tags>
+  </metadata>
+</package>
