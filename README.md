@@ -1,2 +1,2 @@
-NUnit.Assert.Claim
+NUnit.Asserts
 ==================
