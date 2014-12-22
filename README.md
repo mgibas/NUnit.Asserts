@@ -22,11 +22,13 @@ CompareAssert.AreEqual(expectedObject, actualObject);
 
 - Compare objects without types check:
 ```csharp
-CompareAssert.AreSimilar(expectedObject, actualObject);
+CompareAssert.AreEquivalent(expectedObject, actualObject);
 ```
 
 - Compare objects without specified properties:
 ```csharp
+CompareAssert.AreEqual(expectedObject, actualObject, p => p.PropertyToIgnore, p => p.OtherPropertyToIgnore);
+CompareAssert.AreEquivalent(expectedObject, actualObject, p => p.PropertyToIgnore, p => p.OtherPropertyToIgnore);
 CompareAssert.AreEqual(expectedObject, actualObject, "PropertyToIgnore", "OtherPropertyToIgnore");
-CompareAssert.AreSimilar(expectedObject, actualObject, "PropertyToIgnore", "OtherPropertyToIgnore");
+CompareAssert.AreEquivalent(expectedObject, actualObject, "PropertyToIgnore", "OtherPropertyToIgnore");
 ```
