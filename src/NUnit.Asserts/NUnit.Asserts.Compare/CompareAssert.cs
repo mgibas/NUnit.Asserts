@@ -14,6 +14,16 @@ namespace NUnit.Asserts.Compare
     /// </summary>
     /// <param name="expected"></param>
     /// <param name="actual"></param>
+    public static void AreEqual<T>(T expected, T actual)
+    {
+      AreEqual(expected, actual, new string[0]);
+    }
+
+    /// <summary>
+    /// Examine objects equality with types checking
+    /// </summary>
+    /// <param name="expected"></param>
+    /// <param name="actual"></param>
     /// <param name="propertiesToIgnore">Properties that should be ignored when comparing objects</param>
     public static void AreEqual<T>(T expected, T actual, params string[] propertiesToIgnore)
     {
@@ -32,6 +42,16 @@ namespace NUnit.Asserts.Compare
     {
       var propertyNames = propertiesToIgnore.Select(PropertyName);
       AreEqual(expected, actual, propertyNames.ToArray());
+    }
+
+    /// <summary>
+    /// Examine objects equality without types checking
+    /// </summary>
+    /// <param name="expected"></param>
+    /// <param name="actual"></param>
+    public static void AreEquivalent(object expected, object actual)
+    {
+      AreEquivalent(expected, actual, new string[0]);
     }
 
     /// <summary>
