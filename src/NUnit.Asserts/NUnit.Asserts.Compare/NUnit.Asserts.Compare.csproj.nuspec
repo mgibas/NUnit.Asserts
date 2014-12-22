@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NUnit.Asserts.Compare</id>
+    <version>0.1.0</version>
+    <authors>mgibas</authors>
+    <owners>mgibas</owners>
+    <projectUrl>https://github.com/mgibas/NUnit.Asserts</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NUnit comparing assertions</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>NUnit Assert Compare</tags>
+  </metadata>
+</package>
