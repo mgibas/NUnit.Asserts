@@ -1,9 +1,11 @@
 NUnit.Asserts
 ==================
-Set of simple library with common (more or less) asserts that makes Your tests more DRY!
+Set of simple libraries with common (more or less) asserts that makes Your tests more DRY!
 
 NUnit.Asserts.Microsoft.Owin.Security
 ==================
+Asserts that help to examine ClaimsIdentity object
+
 - Checking ClaimsIdentity
 ```csharp
 ClaimsIdentityAssert.ContainsClaim(ClaimTypes.Role, "user", context.Ticket.Identity);
@@ -12,8 +14,6 @@ ClaimsIdentityAssert.ContainsClaim(ClaimTypes.Role, "user", context.Ticket.Ident
 NUnit.Asserts.Compare
 ==================
 Couple of simple Nunit asserts that compare given objects using https://www.nuget.org/packages/CompareNETObjects/
-
-Getting Started:
 
 - Compare objects with types check:
 ```csharp
