@@ -25,7 +25,7 @@ namespace NUnit.Asserts.Compare
     /// <param name="expected"></param>
     /// <param name="actual"></param>
     /// <param name="propertiesToIgnore">Properties that should be ignored when comparing objects</param>
-    public static void AreSimilar(object expected, object actual, params string[] propertiesToIgnore)
+    public static void AreEquivalent(object expected, object actual, params string[] propertiesToIgnore)
     {
       var compareConfig = new ComparisonConfig
       {
