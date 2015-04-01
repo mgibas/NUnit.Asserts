@@ -1,6 +1,13 @@
-NUnit.Asserts
+NUnit.Asserts 
 ==================
 Set of simple libraries with common (more or less) asserts that makes Your tests more DRY!
+
+NuGets
+====
+```
+Install-Package NUnit.Asserts.Microsoft.Owin.Security
+Install-Package NUnit.Asserts.Compare
+```
 
 NUnit.Asserts.Microsoft.Owin.Security
 ==================
