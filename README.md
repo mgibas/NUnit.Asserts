@@ -1,4 +1,4 @@
-NUnit.Asserts 
+NUnit.Asserts [![Build status](https://ci.appveyor.com/api/projects/status/w8uem84janv84u5o?retina=true)](https://ci.appveyor.com/project/mgibas/nunit-asserts)
 ==================
 Set of simple libraries with common (more or less) asserts that makes Your tests more DRY!
 
