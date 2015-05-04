@@ -16,6 +16,7 @@ Asserts that help to examine ClaimsIdentity object
 - Checking ClaimsIdentity
 ```csharp
 ClaimsIdentityAssert.ContainsClaim(ClaimTypes.Role, "user", context.Ticket.Identity);
+ClaimsIdentityAssert.DoesNotContainClaim(ClaimTypes.Role, "user", context.Ticket.Identity);
 ```
 
 NUnit.Asserts.Compare
