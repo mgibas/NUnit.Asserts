@@ -23,6 +23,26 @@ NUnit.Asserts.Compare
 ==================
 Couple of simple Nunit asserts that compare given objects using https://www.nuget.org/packages/CompareNETObjects/
 
+- Compare objects
+```csharp
+Assert.That(actualObject, Compares.To(expected));
+```
+
+- Assert object is contained in collection
+```csharp
+Assert.That(actualObject, Compares.ToAnyIn(list));
+```
+
+- Ignore property
+```csharp
+Assert.That(actualObject, Compares.To(expected).IgnoreProperty(p => p.Some));
+```
+
+- Ignore type checking
+```csharp
+Assert.That(actualObject, Compares.To(expected).WithoutTypeChecking());
+```
+
 - Compare objects with types check:
 ```csharp
 CompareAssert.AreEqual(expectedObject, actualObject);
