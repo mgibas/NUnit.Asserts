@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="KellermanSoftware.Compare-NET-Objects">
-      <HintPath>..\packages\CompareNETObjects.3.01.0.0\lib\net45\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
+      <HintPath>..\packages\CompareNETObjects.3.02.0.0\lib\net45\KellermanSoftware.Compare-NET-Objects.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
