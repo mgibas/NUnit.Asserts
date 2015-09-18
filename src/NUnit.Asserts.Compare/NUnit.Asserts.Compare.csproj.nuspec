@@ -10,5 +10,9 @@
     <description>NUnit comparing assertions</description>
     <copyright>Copyright 2014</copyright>
     <tags>NUnit Assert Compare</tags>
+    <dependencies>
+      <dependency id="CompareNETObjects" version="3.02.0.0" />
+      <dependency id="NUnit" version="[2.6.0,3.0.0)" />
+    </dependencies>
   </metadata>
 </package>
