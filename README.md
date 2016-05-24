@@ -1,4 +1,21 @@
-# [![gitcheese.com](https://api.gitcheese.com/v1/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/badges)](https://www.gitcheese.com/app/#/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/pledges/create) NUnit.Asserts [![Build status](https://ci.appveyor.com/api/projects/status/w8uem84janv84u5o?retina=true)](https://ci.appveyor.com/project/mgibas/nunit-asserts)
+# [![gitcheese.com](https://api.gitcheese.com/v1/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/badges)](https://www.gitcheese.com/app/#/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/pledges/create) 
+
+NUnit.Asserts
+
+
+[![Build status](https://ci.appveyor.com/api/projects/status/w8uem84janv84u5o?retina=true)](https://ci.appveyor.com/project/mgibas/nunit-asserts/branch/master)
+
+
+<p align="center">
+    <a href="https://ci.appveyor.com/project/mgibas/nunit-asserts/branch/master">
+        <img src="https://ci.appveyor.com/api/projects/status/w8uem84janv84u5o/branch/master?svg=true"></img>
+    </a>
+    <a href="https://www.gitcheese.com/app/#/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/pledges/create">
+        <img src="https://api.gitcheese.com/v1/projects/671c413f-730a-47d9-8320-57a4fcc6c32e/badges"></img>
+    </a>
+</p>
+
+===
 
 Set of simple libraries with common (more or less) asserts that makes Your tests more DRY!
 
