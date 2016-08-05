@@ -22,23 +22,15 @@ namespace NUnit.Asserts.Compare
 
         public override ConstraintResult ApplyTo<TActual>(TActual actual)
         {
-            foreach (object actualItem in actual as IEnumerable)
+
+            foreach (var item in _collection)
             {
-                var success = false;
-                foreach (var item in _collection)
-                {
-                    var compareResult = _compareLogic.Compare(item, actualItem);
-                    if (compareResult.AreEqual)
-                    {
-                        success = true;
-                        break;
-                    }
-                }
-                if (!success)
-                    return new ConstraintResult(this, actual, false);
+                var compareResult = _compareLogic.Compare(item, actual);
+                if (compareResult.AreEqual) return new ConstraintResult(this, actual, true);
+                _comparisonResults.Add(compareResult);
             }
 
-            return new ConstraintResult(this, actual, true);
+            return new ConstraintResult(this, actual, false);
         }
 
         public override string Description
