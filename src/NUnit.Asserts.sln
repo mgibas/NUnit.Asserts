@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Asserts.Microsoft.Owin.Security", "NUnit.Asserts.Microsoft.Owin.Security\NUnit.Asserts.Microsoft.Owin.Security.csproj", "{DFE470C6-FBD2-479F-B1FF-E5A9130F7B8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Asserts.Compare", "NUnit.Asserts.Compare\NUnit.Asserts.Compare.csproj", "{3BBFE01D-7862-4102-AA2A-C83D31354CAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.Asserts.Compare.Tests", "NUnit.Asserts.Compare.Tests\NUnit.Asserts.Compare.Tests.csproj", "{418A9876-1C3F-46F2-A636-BCE8669D3DDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3BBFE01D-7862-4102-AA2A-C83D31354CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBFE01D-7862-4102-AA2A-C83D31354CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBFE01D-7862-4102-AA2A-C83D31354CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418A9876-1C3F-46F2-A636-BCE8669D3DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418A9876-1C3F-46F2-A636-BCE8669D3DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418A9876-1C3F-46F2-A636-BCE8669D3DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418A9876-1C3F-46F2-A636-BCE8669D3DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

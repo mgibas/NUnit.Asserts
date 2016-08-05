@@ -3,32 +3,34 @@ using NUnit.Framework.Constraints;
 
 namespace NUnit.Asserts.Compare
 {
-  public class ComparesObjectToConstraint : CompareConstraint
-  {
-    public ComparesObjectToConstraint(object expectedValue)
+    public class ComparesObjectToConstraint : CompareConstraint
     {
-      _expectedValue = expectedValue;
+        public ComparesObjectToConstraint(object expectedValue)
+        {
+            _expectedValue = expectedValue;
+        }
+
+        private ComparisonResult _comparisonResult;
+
+        private readonly object _expectedValue;
+
+        public override ConstraintResult ApplyTo<TActual>(TActual actual)
+        {
+            _comparisonResult = _compareLogic.Compare(actual, _expectedValue);
+
+            return new ConstraintResult(this, actual, _comparisonResult.AreEqual);
+        }
+
+        public override string Description
+        {
+            get
+            {
+                if (_comparisonResult != null)
+                {
+                    return string.Format("Compared objects are not equal, please inspect differences:\n\n{0}", _comparisonResult.DifferencesString);
+                }
+                return "";
+            }
+        }
     }
-
-    private ComparisonResult _comparisonResult;
-
-    private readonly object _expectedValue;
-
-    public override bool Matches(object actualValue)
-    {
-      actual = actualValue;
-
-      _comparisonResult = _compareLogic.Compare(actualValue, _expectedValue);
-
-      return _comparisonResult.AreEqual;
-    }
-
-    public override void WriteDescriptionTo(MessageWriter writer)
-    {
-      if (_comparisonResult != null)
-      {
-        writer.Write("Compared objects are not equal, please inspect differences:\n\n{0}", _comparisonResult.DifferencesString);
-      }
-    }
-  }
 }
