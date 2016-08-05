@@ -11,7 +11,7 @@
     <copyright>Copyright 2014</copyright>
     <tags>NUnit Assert Compare</tags>
     <dependencies>
-      <dependency id="CompareNETObjects" version="3.02.0.0" />
+      <dependency id="CompareNETObjects" version="[3.0.0.0,4.0.0.0)" />
       <dependency id="NUnit" version="[3.0.0,4.0.0)" />
     </dependencies>
   </metadata>
